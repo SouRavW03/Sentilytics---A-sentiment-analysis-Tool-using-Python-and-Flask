@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sentiment Analysis</title>
+  <link rel="stylesheet" href="static/styles/styles.css" />
+  <link rel="icon" type="image/png" href="static/images/favicon/sentiment.png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="container">
+      <h1><span class="highlight">Sentilytics</span> -> A Sentimental Analyzer Tool</h1>
+      <p class="subheading">Quickly detect the sentiment from your text, link, or media.</p>
+
+      <form id="sentiment-form">
+        <div class="input-options">
+          <button type="button" id="btn-prompt-text">Text</button>
+          <button type="button" id="btn-prompt-url">URL</button>
+          <button type="button" id="btn-prompt-media">Media</button>
+        </div>
+
+        <div class="input-area">
+          <div id="div-textarea">
+            <label for="form-input-textarea">Enter Text:</label>
+            <textarea id="form-input-textarea" name="form-textarea" placeholder="Type your input here..."></textarea>
+          </div>
+          <div id="div-url">
+            <label for="form-input-url">Enter URL:</label>
+            <input type="text" id="form-input-url" name="form-url" placeholder="Paste the URL here">
+          </div>
+          <div id="div-media">
+            <label for="form-input-media">Upload Media:</label>
+            <input type="file" id="form-input-media" name="form-media">
+            <p id="media-message" style="display: none; color: #f43f5e; font-weight: 600;">"Hmmm, want Media Analysis also? Hang tight — It will come soon!" ✅</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <input type="submit" id="btn-find-sentiment" value="Analyze">
+          <button type="button" id="btn-reset">Clear</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p style="font-size: 20px">Made By - Sourav Walia</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/souravwalia03" target="_blank">
+          <img src="static/images/icons/instagram.png" alt="Instagram">
+          Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/souravw54" target="_blank">
+          <img src="static/images/icons/linkedin.png" alt="LinkedIn">
+          LinkedIn
+        </a>
+        <a href="https://github.com/SouRavW03" target="_blank">
+          <img src="static/images/icons/github.png" alt="LinkedIn">
+          Github
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <div id="sentiment-overlay">
+    <div id="sentiment-overlay-content"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="static/scripts/scripts.js"></script>
+
+  <script>
+  document.getElementById("btn-prompt-media").addEventListener("click", function () {
+    document.getElementById("div-media").style.display = "block";
+    document.getElementById("media-message").style.display = "block";
+    document.getElementById("form-input-media").style.display = "none";
+  });
+</script>
+
+</body>
+
+</html>
