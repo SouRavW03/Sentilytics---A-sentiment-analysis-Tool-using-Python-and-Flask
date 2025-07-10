@@ -63,12 +63,27 @@ A web-based sentiment analysis application that leverages **NLP** and **transfor
   ## 💻 Interface Showcase
 
 ![Homepage - Text](static/images/results/homepage_text.png)
+Homepage - Text
+
 ![Homepage - URL](static/images/results/homepage_url.png)
-![Psitive Sentiment - Text](static/images/results/text_positive.png)
+Homepage - URL
+                    
+![Positive Sentiment - Text](static/images/results/text_positive.png)
+Positive Sentiment - Text
+
 ![Negative Sentiment - Text](static/images/results/text_negative.png)
-![Neutral Sentiment - Text](static/images/results/text_neutral.png)
-![Psitive Sentiment - URL](static/images/results/url_positive.png)
-![Psitive Sentiment - URL](static/images/results/url_negative.png)
+Negative Sentiment - Text
+
+![Neutral Sentiment - Text](static/images/results/text_random.png)
+Neutral Sentiment - Text
+
+![Positive Sentiment - URL](static/images/results/url_positive.png)
+Positive Sentiment - URL
+
+![Positive Sentiment - URL](static/images/results/url_negative.png)
+Positive Sentiment - URL
+
+
 
 ## 📬 Feedback & Contributions
 
