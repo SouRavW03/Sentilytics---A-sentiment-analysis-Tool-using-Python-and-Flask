@@ -81,7 +81,7 @@ Neutral Sentiment - Text
 Positive Sentiment - URL
 
 ![Positive Sentiment - URL](static/images/results/url_negative.png)
-Positive Sentiment - URL
+Negative Sentiment - URL
 
 
 
